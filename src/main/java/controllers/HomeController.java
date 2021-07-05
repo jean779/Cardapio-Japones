@@ -73,7 +73,7 @@ public class HomeController {
 
         ModelAndView carrinhoVazio = new ModelAndView();
         if (request.getSession().getAttribute("carrinho") == null) {
-            carrinhoVazio.setViewName("/comidajap/carrinhoVazio");
+            carrinhoVazio.setViewName("comidajap/carrinhoVazio");
             return carrinhoVazio;
         }
         ArrayList verCarrinho = (ArrayList) request.getSession().getAttribute("carrinho");
